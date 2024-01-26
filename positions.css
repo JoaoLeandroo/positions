@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: green;
+}
+
+/* Static - é o posicionamento padrão */
+.static {
+    background-color: #ff0000;
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    position: static;
+}
+
+/* O relativo é relativo a ele mesmo, pode utilizar os posicionamentos, top, botoom, right e left */
+/* repare que o paragrafo não se mexe junto do container ao utilizar o relative, ele preserva a área inicial do position */
+.relative {
+    background-color: blue;
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: -60px;
+}
+
+.box {
+    width: 500px;
+    height: 300px;
+    margin: 10px auto;
+    position: relative;
+    border: 2px solid red;
+}
+
+/* Com o absolute podemos fujir do fluxo padrao do documento, é necessario utilizar o position relativo no elemento pai, para ele ficar restrito aquela div */
+.absolute {
+    width: 150px;
+    height: 150px;
+    background: blue;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+/* fica fixo na tela */
+.fixed {
+    position: fixed;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: yellow;
+    top: 10px;
+    right: 10px;
+}
+
+/* o position sticky é um hibrido entre relative e fixed */
+.sticky {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    position: sticky;
+    top: 0;
+    left: 10%
+}
+
+.teste {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+}
